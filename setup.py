@@ -1,7 +1,10 @@
 from setuptools import setup
 import os
 from glob import glob
-
+#suppression of the following warning:
+#UserWarning: The 'package_name' argument is deprecated. Please use 'packages' instead.
+import warnings
+warnings.filterwarnings("ignore")
 package_name = 'f1tenth_gym_ros'
 
 setup(
