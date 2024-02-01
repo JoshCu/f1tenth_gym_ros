@@ -1,12 +1,14 @@
 # Installation
-1) install [docker](https://docs.docker.com/get-docker/)
+1) install [docker](https://docs.docker.com/get-docker/), on windows you don't have to do this now
 2) clone this repo
 ```bash
 git clone https://github.com/JoshCu/f1tenth_gym_ros.git
 ```
 3) open it in vscode
-4) click "reopen in container" in the popup on the bottom right
-5) wait
+4) if you don't have devcontainers installed a popup will prompt you to install the extension
+5) if you don't have docker, it will ask if you want to install wsl, you do, then reboot
+6) click "reopen in container" in the popup on the bottom right
+7) wait
 
 # Test changes
 To test any changes, either rebuild and reopen the container which wipes everything outside of this repo   
