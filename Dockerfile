@@ -27,17 +27,17 @@ SHELL ["/bin/bash", "-c"]
 # dependencies
 RUN apt-get update --fix-missing && \
     apt-get install -y git \
-                       nano \
-                       vim \
-                       python3-pip \
-                       libeigen3-dev \
-                       tmux \
-                       ros-foxy-rviz2
+    nano \
+    vim \
+    python3-pip \
+    libeigen3-dev \
+    tmux \
+    ros-foxy-rviz2
 RUN apt-get -y dist-upgrade
 RUN pip3 install transforms3d
 
 # f1tenth gym
-RUN git clone https://github.com/f1tenth/f1tenth_gym
+RUN git clone https://github.com/JoshCu/f1tenth_gym
 RUN cd f1tenth_gym && \
     pip3 install -e .
 
