@@ -33,7 +33,8 @@ if waypoint_follow.py doesn't work, but the code below does work
 apt-get install x11-aps
 xclock
 ```
-don't worry about it, just run it via ros using the commands below
+don't worry about it, just run it via ros using the commands below   
+if you get strange lines and but the windows work when you drag them about, you need to update graphics drivers inside the container for your gpu. nvidia has their own opengl headers which are needed to stop it smearing.
 
 # Running the simulator through ros
 This will run the simulator without rendering pyglet flat display and instead uses rviz to visualise the ros topics.
